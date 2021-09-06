@@ -7,14 +7,14 @@ using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace NewItemRow_MVVM {
-    public class Person {
+    public class Product {
         public string ProductName { get; set; }
         public string CompanyName { get; set; }
         public int UnitPrice { get; set; }
         public bool Discontinued { get; set; }
 
-        public Person() { }
-        public Person(int i) {
+        public Product() { }
+        public Product(int i) {
             ProductName = "ProductName" + i;
             CompanyName = "CompanyName" + i;
             UnitPrice = i;
@@ -23,31 +23,31 @@ namespace NewItemRow_MVVM {
     }
 
     public class MainViewModel : ViewModelBase {
-        public ObservableCollection<Person> PersonList { get; }
+        public ObservableCollection<Product> ProductList { get; }
         public MainViewModel() {
-            PersonList = new ObservableCollection<Person>(GetPersonList());
+            ProductList = new ObservableCollection<Product>(GetProductList());
         }
-        static IEnumerable<Person> GetPersonList() {
-            return Enumerable.Range(0, 3).Select(i => new Person(i));
+        static IEnumerable<Product> GetProductList() {
+            return Enumerable.Range(0, 3).Select(i => new Product(i));
         }
 
         [Command]
         public void InitNewRow(InitNewRowArgs args) {
-            var person = (Person)args.Item;
-            person.UnitPrice = 10;
-            person.CompanyName = "newcompany";
-            person.Discontinued = false;
+            var product = (Product)args.Item;
+            product.UnitPrice = 10;
+            product.CompanyName = "newcompany";
+            product.Discontinued = false;
         }
         [Command]
         public void ValidateRow(RowValidationArgs args) {
-            if(args.IsNewItem && string.IsNullOrEmpty(((Person)args.Item).ProductName)) {
-                args.Result = new ValidationErrorInfo("Please enter the Product name. ");
+            if(args.IsNewItem && string.IsNullOrEmpty(((Product)args.Item).ProductName)) {
+                args.Result = new ValidationErrorInfo("Please enter the Product Name.");
             }
         }
         [Command]
         public void InvalidRow(InvalidRowExceptionArgs args) {
             if(args.IsNewItem) {
-                args.ErrorText = "Please enter the Product name. ";
+                args.ErrorText = "Please enter the Product Name.";
                 args.WindowCaption = "Input Error";
             }
         }

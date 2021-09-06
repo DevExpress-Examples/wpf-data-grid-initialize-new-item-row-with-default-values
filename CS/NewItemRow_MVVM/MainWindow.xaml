@@ -10,7 +10,7 @@
     <Grid>
         <dxg:GridControl x:Name="grid"
                          AutoGenerateColumns="AddNew"
-                         ItemsSource="{Binding PersonList}">
+                         ItemsSource="{Binding ProductList}">
             <dxg:GridControl.View>
                 <dxg:TableView x:Name="view"
                                AutoWidth="True" 

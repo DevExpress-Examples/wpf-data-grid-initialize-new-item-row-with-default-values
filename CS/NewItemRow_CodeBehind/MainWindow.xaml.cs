@@ -5,14 +5,14 @@ using System.Linq;
 using System.Windows;
 
 namespace NewItemRow_CodeBehind {
-    public class Person {
+    public class Product {
         public string ProductName { get; set; }
         public string CompanyName { get; set; }
         public int UnitPrice { get; set; }
         public bool Discontinued { get; set; }
 
-        public Person() { }
-        public Person(int i) {
+        public Product() { }
+        public Product(int i) {
             ProductName = "ProductName" + i;
             CompanyName = "CompanyName" + i;
             UnitPrice = i;
@@ -23,10 +23,10 @@ namespace NewItemRow_CodeBehind {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
-            grid.ItemsSource = GetPersonList().ToList();
+            grid.ItemsSource = GetProductList().ToList();
         }
-        static IEnumerable<Person> GetPersonList() {
-            return Enumerable.Range(0, 3).Select(i => new Person(i));
+        static IEnumerable<Product> GetProductList() {
+            return Enumerable.Range(0, 3).Select(i => new Product(i));
         }
 
         void OnInitNewRow(object sender, InitNewRowEventArgs e) {
@@ -37,14 +37,14 @@ namespace NewItemRow_CodeBehind {
 
         void OnValidateRow(object sender, GridRowValidationEventArgs e) {
             if(e.RowHandle == GridControl.NewItemRowHandle) {
-                e.IsValid = !string.IsNullOrEmpty(((Person)e.Row).ProductName);
+                e.IsValid = !string.IsNullOrEmpty(((Product)e.Row).ProductName);
                 e.Handled = true;
             }
         }
 
         void OnInvalidRowException(object sender, InvalidRowExceptionEventArgs e) {
             if(e.RowHandle == GridControl.NewItemRowHandle) {
-                e.ErrorText = "Please enter the Product name. ";
+                e.ErrorText = "Please enter the Product Name.";
                 e.WindowCaption = "Input Error";
             }
         }
