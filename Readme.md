@@ -3,11 +3,41 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1569)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to Initialize the New Item Row with Default Values
 
+# WPF Data Grid - How to Initialize the New Item Row with Default Values
 
-<p>This example demonstrates how to automatically initialize cells displayed within the New Item Row, with default values. To do this, the InitNewRow event is handled.</p>
+This example demonstrates how to initialize cells displayed within the [New Item Row](https://docs.devexpress.com/WPF/6258/controls-and-libraries/data-grid/visual-elements/common-elements/new-item-row) with default values.
 
-<br/>
+![](https://docs.devexpress.com/WPF/images/Grid_InitializeNewRow.png?v=21.2)
 
+<!-- default file list -->
 
+## Files to Look At
+
+### Code Behind Technique
+
+- [MainWindow.xaml](./CS/NewItemRow_CodeBehind/MainWindow.xaml) ([MainWindow.xaml](./VB/NewItemRow_CodeBehind/MainWindow.xaml))
+- [MainWindow.xaml.cs](./CS/NewItemRow_CodeBehind/MainWindow.xaml.cs#L32-L50) ([MainWindow.xaml.vb](./VB/NewItemRow_CodeBehind/MainWindow.xaml.vb#L35-L53))
+
+### MVVM Technique
+
+- [MainWindow.xaml](./CS/NewItemRow_MVVM/MainWindow.xaml) ([MainWindow.xaml](./VB/NewItemRow_MVVM/MainWindow.xaml))
+- [MainViewModel.cs](./CS/NewItemRow_MVVM/MainViewModel.cs#L34-L53) ([MainViewModel.vb](./VB/NewItemRow_MVVM/MainViewModel.vb#L37-L56))
+
+<!-- default file list end -->
+
+## Documentation
+
+- [Add and Remove Rows](https://docs.devexpress.com/WPF/6123/controls-and-libraries/data-grid/data-editing-and-validation/add-and-remove-rows)
+- [New Item Row](https://docs.devexpress.com/WPF/6258/controls-and-libraries/data-grid/visual-elements/common-elements/new-item-row)
+- [InitNewRow](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.InitNewRow)
+- [ValidateRow](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.ValidateRow)
+- [InvalidRowException](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.InvalidRowException)
+- [InitNewRowCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.InitNewRowCommand)
+- [ValidateRowCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.ValidateRowCommand)
+- [InvalidRowExceptionCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.InvalidRowExceptionCommand)
+
+## More Examples
+
+- [How to Validate Cell Editors](https://github.com/DevExpress-Examples/validate-cell-editors)
+- [How to Validate Data Rows](https://github.com/DevExpress-Examples/how-to-validate-data-rows-e1593)
