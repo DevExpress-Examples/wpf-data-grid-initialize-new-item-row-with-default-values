@@ -41,5 +41,5 @@ This example demonstrates how to initialize cells displayed within the [New Item
 
 - [How to Validate Cell Editors](https://github.com/DevExpress-Examples/validate-cell-editors)
 - [How to Validate Data Rows](https://github.com/DevExpress-Examples/how-to-validate-data-rows-e1593)
-- [How to initialize a new row when only the editor is shown](https://github.com/DevExpress-Examples/how-to-initialize-a-new-row-when-only-the-editor-is-shown-e1817)
+- [How to Initialize a New Row when the Editor is Shown](https://github.com/DevExpress-Examples/how-to-initialize-a-new-row-when-only-the-editor-is-shown-e1817)
 - [How to add a new row using the New Item Row](https://github.com/DevExpress-Examples/how-to-add-a-new-row-using-the-new-item-row-e1025)
