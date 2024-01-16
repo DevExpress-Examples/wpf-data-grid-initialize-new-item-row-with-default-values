@@ -38,10 +38,8 @@ Namespace NewItemRow_CodeBehind
             Return Enumerable.Range(0, 3).[Select](Function(i) New Product(i))
         End Function
 
-        Private Sub OnInitNewRow(ByVal sender As Object, ByVal e As InitNewRowEventArgs)
-            Me.grid.SetCellValue(e.RowHandle, "UnitPrice", 10)
-            Me.grid.SetCellValue(e.RowHandle, "CompanyName", "newcompany")
-            Me.grid.SetCellValue(e.RowHandle, "Discontinued", False)
+        Private Sub OnAddingNewRow(ByVal sender As Object, ByVal e As System.ComponentModel.AddingNewEventArgs)
+            e.NewObject = New Product() With {.CompanyName = "newcompany", .UnitPrice = 10, .Discontinued = False}
         End Sub
 
         Private Sub OnValidateRow(ByVal sender As Object, ByVal e As GridRowValidationEventArgs)

@@ -9,10 +9,10 @@
                          AutoGenerateColumns="AddNew">
             <dxg:GridControl.View>
                 <dxg:TableView x:Name="view"
-                               AutoWidth="True" 
-                               NewItemRowPosition="Top" 
-                               InitNewRow="OnInitNewRow"
-                               ValidateRow="OnValidateRow" 
+                               AutoWidth="True"
+                               NewItemRowPosition="Top"
+                               AddingNewRow="OnAddingNewRow"
+                               ValidateRow="OnValidateRow"
                                InvalidRowException="OnInvalidRowException" />
             </dxg:GridControl.View>
         </dxg:GridControl>

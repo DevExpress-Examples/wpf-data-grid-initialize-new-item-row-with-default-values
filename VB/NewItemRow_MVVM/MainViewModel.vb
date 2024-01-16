@@ -42,11 +42,8 @@ Namespace NewItemRow_MVVM
         End Function
 
         <Command>
-        Public Sub InitNewRow(ByVal args As InitNewRowArgs)
-            Dim product = CType(args.Item, Product)
-            product.UnitPrice = 10
-            product.CompanyName = "newcompany"
-            product.Discontinued = False
+        Public Sub AddingNewRow(ByVal args As NewRowArgs)
+            args.Item = New Product() With {.CompanyName = "newcompany", .UnitPrice = 10, .Discontinued = False}
         End Sub
 
         <Command>
