@@ -29,10 +29,12 @@ namespace NewItemRow_CodeBehind {
             return Enumerable.Range(0, 3).Select(i => new Product(i));
         }
 
-        void OnInitNewRow(object sender, InitNewRowEventArgs e) {
-            grid.SetCellValue(e.RowHandle, "UnitPrice", 10);
-            grid.SetCellValue(e.RowHandle, "CompanyName", "newcompany");
-            grid.SetCellValue(e.RowHandle, "Discontinued", false);
+        void OnAddingNewRow(object sender, System.ComponentModel.AddingNewEventArgs e) {
+            e.NewObject = new Product() {
+                CompanyName = "newcompany",
+                UnitPrice = 10,
+                Discontinued = false
+            };
         }
 
         void OnValidateRow(object sender, GridRowValidationEventArgs e) {

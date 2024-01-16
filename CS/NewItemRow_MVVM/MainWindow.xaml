@@ -15,7 +15,7 @@
                 <dxg:TableView x:Name="view"
                                AutoWidth="True" 
                                NewItemRowPosition="Top"
-                               InitNewRowCommand="{Binding InitNewRowCommand}"
+                               AddingNewRowCommand="{Binding AddingNewRowCommand}"
                                ValidateRowCommand="{Binding ValidateRowCommand}" 
                                InvalidRowExceptionCommand="{Binding InvalidRowCommand}" />
             </dxg:GridControl.View>

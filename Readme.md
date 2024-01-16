@@ -10,30 +10,26 @@ This example demonstrates how to initialize cells displayed within the [New Item
 
 ![](https://docs.devexpress.com/WPF/images/Grid_InitializeNewRow.png?v=21.2)
 
-<!-- default file list -->
-
-## Files to Look At
+## Files to Review
 
 ### Code Behind Technique
 
 - [MainWindow.xaml](./CS/NewItemRow_CodeBehind/MainWindow.xaml) ([MainWindow.xaml](./VB/NewItemRow_CodeBehind/MainWindow.xaml))
-- [MainWindow.xaml.cs](./CS/NewItemRow_CodeBehind/MainWindow.xaml.cs#L32-L50) ([MainWindow.xaml.vb](./VB/NewItemRow_CodeBehind/MainWindow.xaml.vb#L35-L53))
+- [MainWindow.xaml.cs](./CS/NewItemRow_CodeBehind/MainWindow.xaml.cs) ([MainWindow.xaml.vb](./VB/NewItemRow_CodeBehind/MainWindow.xaml.vb))
 
 ### MVVM Technique
 
 - [MainWindow.xaml](./CS/NewItemRow_MVVM/MainWindow.xaml) ([MainWindow.xaml](./VB/NewItemRow_MVVM/MainWindow.xaml))
-- [MainViewModel.cs](./CS/NewItemRow_MVVM/MainViewModel.cs#L34-L53) ([MainViewModel.vb](./VB/NewItemRow_MVVM/MainViewModel.vb#L37-L56))
-
-<!-- default file list end -->
+- [MainViewModel.cs](./CS/NewItemRow_MVVM/MainViewModel.cs) ([MainViewModel.vb](./VB/NewItemRow_MVVM/MainViewModel.vb))
 
 ## Documentation
 
 - [Add and Remove Rows](https://docs.devexpress.com/WPF/6123/controls-and-libraries/data-grid/data-editing-and-validation/add-and-remove-rows)
 - [New Item Row](https://docs.devexpress.com/WPF/6258/controls-and-libraries/data-grid/visual-elements/common-elements/new-item-row)
-- [InitNewRow](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.InitNewRow)
+- [AddingNewRow](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.AddingNewRow)
 - [ValidateRow](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.ValidateRow)
 - [InvalidRowException](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.InvalidRowException)
-- [InitNewRowCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.InitNewRowCommand)
+- [AddingNewRowCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.AddingNewRowCommand)
 - [ValidateRowCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.ValidateRowCommand)
 - [InvalidRowExceptionCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.InvalidRowExceptionCommand)
 

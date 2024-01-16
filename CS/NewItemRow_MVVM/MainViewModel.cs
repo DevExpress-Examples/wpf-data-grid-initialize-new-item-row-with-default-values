@@ -32,11 +32,12 @@ namespace NewItemRow_MVVM {
         }
 
         [Command]
-        public void InitNewRow(InitNewRowArgs args) {
-            var product = (Product)args.Item;
-            product.UnitPrice = 10;
-            product.CompanyName = "newcompany";
-            product.Discontinued = false;
+        public void AddingNewRow(NewRowArgs args) {
+            args.Item = new Product() {
+                CompanyName = "newcompany",
+                UnitPrice = 10,
+                Discontinued = false
+            };
         }
         [Command]
         public void ValidateRow(RowValidationArgs args) {
