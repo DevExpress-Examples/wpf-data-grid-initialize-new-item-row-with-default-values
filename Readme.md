@@ -9,7 +9,7 @@
 
 This example demonstrates how to initialize cells displayed within the [New Item Row](https://docs.devexpress.com/WPF/6258/controls-and-libraries/data-grid/visual-elements/common-elements/new-item-row) with default values.
 
-![](https://docs.devexpress.com/WPF/images/Grid_InitializeNewRow.png?v=21.2)
+![](https://docs.devexpress.com/WPF/images/Grid_InitializeNewRow.png)
 
 ## Files to Review
 
@@ -46,3 +46,4 @@ This example demonstrates how to initialize cells displayed within the [New Item
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
