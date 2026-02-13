@@ -40,7 +40,7 @@ This example demonstrates how to initialize cells displayed within the [New Item
 - [WPF Data Grid - Validate Data Rows](https://github.com/DevExpress-Examples/wpf-data-grid-validate-data-rows)
 - [WPF Data Grid - Initialize a New Row when the Editor is Shown](https://github.com/DevExpress-Examples/how-to-initialize-a-new-row-when-only-the-editor-is-shown-e1817)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-initialize-new-item-row-with-default-values&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-initialize-new-item-row-with-default-values&~~~was_helpful=no)
 
